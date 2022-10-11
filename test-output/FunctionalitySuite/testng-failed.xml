@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [FunctionalitySuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FireFoxTest(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="Com.MakeMyTrip.TestClass.TC01_Validate_Login_Functionality">
+        <methods>
+          <include name="Validate_Login_Functionality"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Com.MakeMyTrip.TestClass.TC01_Validate_Login_Functionality -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+  <test thread-count="5" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Com.MakeMyTrip.TestClass.TC01_Validate_Login_Functionality">
+        <methods>
+          <include name="Validate_Login_Functionality"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Com.MakeMyTrip.TestClass.TC01_Validate_Login_Functionality -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [FunctionalitySuite] -->
